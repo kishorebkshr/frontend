@@ -1,0 +1,55 @@
+h1{
+
+	background-color: yellow;
+
+	text-decoration-color:red; 
+
+}
+
+
+.box1{
+
+  width:15;
+	margin-left : 210px;
+	
+	background-color: yellow;
+}
+
+
+
+
+.box2{
+
+height:30px;
+margin-right:500 px;
+background-color: pink;
+}
+
+.box2 ul li{
+ width: 30px;
+	display: inline;
+	;
+}
+.img{
+width: 30px;
+	margin-left: 500px;
+}
+
+.box4{
+
+	width:70%
+	height:200px;
+	margin-right: 1350px;
+	background-color:pink;
+	margin-top: -480px;
+
+}
+
+.box4 ul li{
+	width: 50px;
+	margin-left: 20px;
+	margin-top: -100px;
+	padding-top:80px;
+	margin-bottom: 125px;
+}
+
