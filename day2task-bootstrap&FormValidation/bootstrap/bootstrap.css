@@ -1,0 +1,53 @@
+#aTag nav a
+{
+    padding: 25px;
+}
+#lAd
+{
+    height: 500px;
+    background-color: teal;
+    overflow: hidden;
+}
+#rAd
+{
+    height: 500px;
+    background-color: teal;
+    overflow: hidden;
+}
+#fImg
+{
+    margin-left: 200px;
+}
+#sImg
+{
+    margin-left: 30px;
+}
+#para1 p
+{
+    font-family: cursive;
+    padding: 25px;
+    margin-left: 5px;
+}
+#para2 img
+{
+    padding-top: 20px;
+    width: 150px;
+    height: 150px;
+}
+#piclast img{
+margin-left: 220px;
+margin-bottom: 5000px;
+
+}
+#lb{
+
+height: 500px;
+    background-color: teal;
+    overflow: hidden;	
+}
+#rb{
+	height: 500px;
+    background-color: teal;
+    overflow: hidden;
+
+}

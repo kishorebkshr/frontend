@@ -1,0 +1,75 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	 <title>lOGIN FORM</title>
+
+	 <center><h1>LOGIN PAGE</h1></center>
+
+	  <link rel="stylesheet" type="text/css" href="formvalidation.css">
+</head>
+
+<script>  
+     function validateform(){  
+     var name=document.myform.name.value;  
+     var password=document.myform.password.value;  
+  
+         if (name==null || name==""){  
+         alert("Name can't be blank");  
+         return false;  
+         }else if(password.length<6){  
+         alert("Password must be at least 6 characters.");  
+  
+           } 
+
+if(name==password)
+{
+	return true;
+}
+
+else{
+	alert("password must be same!");  
+return false;
+}
+
+}  
+
+</script>  
+<body>  
+	<center>
+<form name="myform" method="post" action="abc.jsp" onsubmit="return validateform()" >  
+Name: <input type="text" name="name"><br/>  
+Password: <input type="password" name="password"><br/>  
+
+ 
+<br>
+<br>
+<div class="radio">
+      <li><label id="gender">Sex:</label></li>
+     <li><input type="radio" name="msex" value="Male" />
+     	<span>Male</span></li>
+      <li><input type="radio" name="fsex" value="Female" /><span>Female</span></li>
+</div>
+<br>
+<br>
+<li><label for="country">Country:</label></li>
+<li><select name="country">
+<option selected="" value="Default">(Please select a country)</option>
+     <option value="AF">Australia</option>
+     <option value="AL">Canada</option>
+     <option value="DZ">India</option>
+     <option value="AS">Russia</option>
+     <option value="AD">USA</option>
+     </center>
+   <input type="submit" onlclick="validateform()"value="submit">  
+</form>
+
+<script>
+	var name=document.getElement("getValues").value;
+	console.log("the value is"+name);
+
+
+</script>
+</body>
+</html>
