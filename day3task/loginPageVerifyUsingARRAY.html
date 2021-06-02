@@ -1,0 +1,166 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+   <title>lOGIN FORM</title>
+
+   
+
+    <link rel="stylesheet" type="text/css" href="loginPageVerifyUsingARRAY.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
+
+
+<script> 
+
+  var students=[];
+     function validateform()
+{  
+     var name=document.getElementById("name").value;  
+     var password=document.getElementById("password").value; 
+     var age=document.getElementById("age").value;
+
+     var student={};
+     student.Name=name;
+     student.Password=password;
+     student.Age=age;
+     students.push(student);
+
+       console.log(students);
+     }
+
+    
+     
+     function check()
+     {
+      var username=document.getElementById("lname").value;
+      var userpassword=document.getElementById("lpassword").value; 
+
+          var isUserfound=false;
+          var isUserPasswordFound=false;
+
+      for(var i=0;i<students.length;i++)
+
+      {
+         if (username==students[i].Name) 
+         {
+          isUserfound=true;
+
+            if(userpassword==students[i].Password)
+            {
+              isUserPasswordFound=true; 
+              break;
+            }
+         }
+       }      
+        if (isUserfound==true && isUserPasswordFound==true)alert("login success");
+          
+        
+        else if(isUserfound==true && isUserPasswordFound==false)alert("pls enter correct password");
+        else alert("please enter valide credentials");
+          
+        }
+         
+       
+      
+        
+       
+        
+
+
+      
+ 
+    
+
+    
+    </script> 
+    </head> 
+          
+                
+           
+
+
+
+
+ 
+
+ 
+<body>  
+  
+    <div class="row">
+        <div class="col-md-3" id="REGISTER">
+          <div class="container">
+                <h1>REGISTER PAGE</h1>
+
+                 
+                  Name: <input type="text" id="name"><br/>  
+                  password: <input type="text" id="password"><br/>
+                  age: <input type="text" id="age">
+
+                  <br>
+                  <br>
+                   <input type="submit" onclick="validateform()" value="submit"> 
+          </div>
+                    
+         </div>
+ 
+        <div class="col-md-6" id="center">
+          <div class="img">
+          <img src="nature.png" >
+          </div>
+        </div>
+
+
+         <div class="col-md-3" id="LOGIN">
+          <div class="container2">
+            <h1> LOGIN PAGE</h1>
+            Name:<input type="text" id="lname"><br>
+            password:<input type="text" id="lpassword"><br>
+            age: <input type="text" id="age">
+            <br>
+            <br>
+            <input type="submit" onclick="check()" value="submit"> 
+            
+          </div>
+           
+         </div>         
+                 
+    </div>
+              
+</body>
+</html>                   
+
+  
+                   
+                   
+                   
+                  
+
+                  
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
