@@ -1,0 +1,18 @@
+
+<div>
+   
+    <div class="username">
+        <h4> Login </h4>
+          <label for="InputName">Name  </label><br>
+           <input type="text" class="form-control" #user id="InputName"  placeholder="Enter Name">
+
+     <div class="form-group1">
+            <label for="InputPassword1">Password</label><br>
+            <input type="password" class="form-control" id="InputPassword1" placeholder="Password">
+          </div>
+        <br>
+          <button type="button"  class="button1" (click)="submit(user.value)">Login</button>
+       
+</div>
+
+<!-- (click)="submit(name)" -->
