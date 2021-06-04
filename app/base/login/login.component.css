@@ -1,0 +1,17 @@
+.register{
+ color:black ;
+ size: 50px;
+ font-weight: 900;
+  background-image: url('img5.png');
+  background-repeat: initial;
+ padding-left: 50px;
+ margin-top: 80px;
+ box-shadow: -10px 19px 18px 3px rgba(0,0,0,0.75);
+-webkit-box-shadow: -10px 19px 18px 3px rgba(0,0,0,0.75);
+-moz-box-shadow: -10px 19px 18px 3px rgba(0,0,0,0.75);
+}
+button{
+    background-color:rgb(2, 187, 248);
+    padding-right:50px;
+
+}
