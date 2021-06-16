@@ -1,0 +1,15 @@
+hr{
+
+    font-weight: bold;
+}
+.row{
+    background-color:wight;
+}
+h1{
+    text-align: center;
+    margin-right: 80px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(28, 31, 19);
+    border-style: dashed;
+    border-color: yellow;
+}

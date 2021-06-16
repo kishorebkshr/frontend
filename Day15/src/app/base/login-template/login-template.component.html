@@ -1,0 +1,40 @@
+<div class="container">
+    <h2>Login Form</h2>
+
+
+    <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)">
+
+
+        <div class="form-group">
+            <label for="name">Name</label><br>
+            <input type="text" #name="ngModel" class="form-control" required [(ngModel)]="model.name" name="name">
+            <div *ngIf="name.invalid && name.touched" class="error">First Name Field Is Required
+
+
+            </div>
+        </div>
+
+
+        <br>
+        <div class="form-group">
+            <label>Password</label><br>
+            <input type="password" class="form-control" #password="ngModel" required [(ngModel)]="model.password"
+                name="address">
+            <div *ngIf="password.invalid && password.touched" class="error">Password is Required
+            </div>
+        </div>
+        <br>
+
+
+
+
+
+
+
+
+
+        <br>
+        <button type="submit" class="btn btn-success btn-lg btn-block" (click)="validate()"> SUBMIT</button>
+
+    </form>
+</div>

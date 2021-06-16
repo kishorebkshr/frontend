@@ -1,0 +1,124 @@
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Firstname</th>
+            <th scope="col">Email</th>
+            <th scope="col">Address</th>
+            <th scope="col">Age</th>
+            <th scope="col">Password</th>
+            <th scope="col">confirmPasswords</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+
+            <td>{{local.firstName}}</td>
+            <td>{{local.email}}</td>
+            <td>{{local.address}}</td>
+            <td>{{local.age}}</td>
+            <td>{{local.Password}}</td>
+            <td>{{local.confirmPassword}}</td>
+
+        </tr>
+
+    </tbody>
+</table>
+
+<div class="row">
+    <div>
+        <button type="button" class="btn btn-primary btn-lg" id="gb" (click)="goBack()">Go back</button>
+        <button type="button" class="btn btn-success btn-lg" id="ei" (click)="editInfo()">Edit Info</button>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+        <div *ngIf="detail">
+            <h2>{{detail.firstName | uppercase}} Details</h2>
+            <div class="shadow p-3 mb-5 bg-white rounded">
+                <form class="edit">
+                    <div class="form-group">
+                        <label for="firstName">First name</label>
+                        <input type="text" name="firstName" class="form-control" [(ngModel)]="detail.firstName"
+                            placeholder="First Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" class="form-control" [(ngModel)]="detail.email"
+                            placeholder="Last Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="mail">Address</label>
+                        <input type="text" name="address" class="form-control" [(ngModel)]="detail.address"
+                            placeholder="address">
+                    </div>
+                    <div class="form-group">
+                        <label for="age">age</label>
+                        <input type="number" name="age" class="form-control" [(ngModel)]="detail.age" placeholder="age">
+                    </div>
+                    <div class="form-group">
+                        <label for="pass">Password</label>
+                        <input type="Password" name="Password" class="form-control" [(ngModel)]="detail.Password"
+                            placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <label for="pass">Confirm Password</label>
+                        <input type="Password" name="confirmPassword" class="form-control"
+                            [(ngModel)]="detail.confirmPassword" placeholder="confirmPassword">
+                    </div>
+
+
+                    <div>
+                        <button type="button" class="btn btn-success btn-lg" (click)="updInfo()">Update Info</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3"></div>
+
+</div>
+<br>
+<br>
+
+
+
+
+
+<div class="row">
+
+    <div class="col-md-12">
+        <button type="button" class="btn btn-success btn-lg" (click)="getData()"> Details</button>
+
+    </div>
+</div>
+<br>
+
+
+
+
+
+<table class="table table-striped table-dark">
+    <thead>
+        <tr>
+            <th scope="col">Userid</th>
+            <th scope="col">Id</th>
+            <th scope="col">Title</th>
+            <th scope="col">Body</th>
+        </tr>
+    </thead>
+
+
+    <tbody>
+        <tr *ngFor="let user of value">
+            <td>{{user.userId}}</td>
+            <td>{{user.id}}</td>
+            <td>{{user.title}}</td>
+            <td>{{user.body}}</td>
+        </tr>
+    </tbody>
+
+
+
+</table>

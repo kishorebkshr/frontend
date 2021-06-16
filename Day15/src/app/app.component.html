@@ -1,0 +1,29 @@
+<br>
+<h1>Welcome to Register and Login Page</h1>
+<hr>
+<hr>
+<div class="row">
+
+  <div class="col-md-12" style="width: 400px;height:100px; color: white;">
+    <app-base></app-base>
+  </div>
+
+</div>
+
+
+<hr>
+<hr>
+
+<router-outlet></router-outlet>
+
+<input type="file" name="myfile" ng2FileSelect [uploader]="uploader" />
+<button (click)="upload()" class="btn">Upload</button>
+
+
+
+<button type="button" (click)="getImageFromService()">Get Image</button>
+
+<img [src]="imageToShow" alt="Place image title" *ngIf="!isImageLoading; else noImageFound">
+<ng-template #noImageFound>
+  <img src="fallbackImage.png" alt="Fallbackimage">
+</ng-template>
